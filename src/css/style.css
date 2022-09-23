@@ -1,0 +1,157 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.container{
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    height: max-content;
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(253, 253, 253);
+}
+
+.heading{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.underline {
+    margin: 0.7rem auto 0 auto;
+    height: 0.25rem;
+    width: 5rem;
+    background: rgb(22, 162, 249);
+  }
+
+.img-container{
+    /* border: 2px solid green; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1.6rem auto;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f10e ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: rgb(22, 162, 249);
+    color: white;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(22, 162, 249);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#review-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-container{
+    /* border: 2px solid blue; */
+    border-radius: 12px;
+    width: 60vw;
+    margin-bottom: 2.4rem;
+    background-color:white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s linear;
+
+}
+
+.review-container:hover{
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.review-content{
+    text-align: center;
+    margin: 1.2rem;
+}
+
+#author{
+    font-size: 1.2rem;
+}
+
+#job{
+    color: rgb(22, 162, 249);
+    margin: 0.4rem auto 0.7rem auto;
+}
+
+.button-container{
+    margin: 1.3rem;
+}
+
+.prev-btn{
+    border: transparent;
+    background-color: transparent;
+    color: rgb(22, 162, 249);
+}
+
+.next-btn{
+    border: transparent;
+    background-color: transparent;
+    color: rgb(22, 162, 249);
+}
+
+.random-btn{
+    font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: transparent; 
+}
+
+.random-btn:hover{
+    color: white;
+    background-color: rgb(22, 162, 249);
+    border: 1px solid white;
+}
+
+#btn{
+    padding: 0 0.9rem;
+    cursor: pointer;
+}
+
+.info{
+    padding: 0.3rem;
+}
